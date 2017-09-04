@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Page Object test example]">
+  <parameter name="petname1" value="Dog"/>
+  <parameter name="appURL" value="https://qa-petstore.herokuapp.com/"/>
+  <parameter name="petStatus3" value=""/>
+  <parameter name="petStatus1" value="Available"/>
+  <parameter name="petname3" value=""/>
+  <parameter name="petname2" value="CAT"/>
+  <parameter name="petStatus2" value="Out of Stack"/>
+  <parameter name="browserType" value="firefox"/>
+  <test name="sample test(failed)">
+    <classes>
+      <class name="com.pack.common.tests.BasePageTest">
+        <methods>
+          <include name="createNullPet" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.pack.common.tests.BasePageTest -->
+    </classes>
+  </test> <!-- sample test(failed) -->
+</suite> <!-- Failed suite [Page Object test example] -->

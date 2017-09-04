@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object test example">
+<parameter name="appURL" value="https://qa-petstore.herokuapp.com/"/>
+<parameter name="petname1" value="Dog"></parameter>
+<parameter name="petStatus1" value="Available"></parameter>
+<parameter name="petname2" value="CAT"></parameter>
+<parameter name="petStatus2" value="Out of Stack"></parameter>
+<parameter name="petname3" value=""></parameter>
+<parameter name="petStatus3" value=""></parameter>
+<parameter name="browserType" value="firefox"/>
+  <test name="sample test">
+    <classes>
+      <class name="com.pack.common.tests.BasePageTest"/>
+    </classes>
+  </test>
+</suite>

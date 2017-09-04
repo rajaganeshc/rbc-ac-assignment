@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Page Object test example" duration-ms="231400" started-at="2017-09-04T12:33:23Z" finished-at="2017-09-04T12:37:14Z">
+    <groups>
+    </groups>
+    <test name="sample test" duration-ms="231400" started-at="2017-09-04T12:33:23Z" finished-at="2017-09-04T12:37:14Z">
+      <class name="com.pack.common.tests.BasePageTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.pack.common.tests.BasePageTest@1690630]" name="initializeTestBaseSetup" is-config="true" duration-ms="22199" started-at="2017-09-04T14:33:23Z" finished-at="2017-09-04T14:33:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://qa-petstore.herokuapp.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pack.common.tests.BasePageTest@1690630]" name="setUp" is-config="true" duration-ms="1" started-at="2017-09-04T14:33:45Z" finished-at="2017-09-04T14:33:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkFocus()[pri:0, instance:com.pack.common.tests.BasePageTest@1690630]" name="checkFocus" duration-ms="4270" started-at="2017-09-04T14:33:45Z" finished-at="2017-09-04T14:33:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFocus -->
+        <test-method status="FAIL" signature="createNullPet(java.lang.String, java.lang.String)[pri:0, instance:com.pack.common.tests.BasePageTest@1690630]" name="createNullPet" duration-ms="71168" started-at="2017-09-04T14:33:49Z" finished-at="2017-09-04T14:35:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Null Pet was not created expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Null Pet was not created expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.pack.common.tests.BasePageTest.createNullPet(BasePageTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNullPet -->
+        <test-method status="PASS" signature="createPetEnter(java.lang.String, java.lang.String)[pri:0, instance:com.pack.common.tests.BasePageTest@1690630]" name="createPetEnter" duration-ms="62272" started-at="2017-09-04T14:35:00Z" finished-at="2017-09-04T14:36:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CAT]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Out of Stack]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPetEnter -->
+        <test-method status="PASS" signature="createValidPet(java.lang.String, java.lang.String)[pri:0, instance:com.pack.common.tests.BasePageTest@1690630]" name="createValidPet" duration-ms="66449" started-at="2017-09-04T14:36:03Z" finished-at="2017-09-04T14:37:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dog]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Available]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createValidPet -->
+        <test-method status="PASS" signature="verifyHomePage()[pri:0, instance:com.pack.common.tests.BasePageTest@1690630]" name="verifyHomePage" duration-ms="19" started-at="2017-09-04T14:37:09Z" finished-at="2017-09-04T14:37:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pack.common.tests.BasePageTest@1690630]" name="tearDown" is-config="true" duration-ms="4965" started-at="2017-09-04T14:37:09Z" finished-at="2017-09-04T14:37:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pack.common.tests.BasePageTest -->
+    </test> <!-- sample test -->
+  </suite> <!-- Page Object test example -->
+</testng-results>
